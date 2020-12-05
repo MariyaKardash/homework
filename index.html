@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/reset.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
-    <title>Homework 2</title>
+    <title>Homework 4</title>
 </head>
 <body>
     <section class="awesome">
-        <div class="awesome__container">
-                <h2 class ="awesome__title">Why this is awesome</h2>
-                <hr>
-                <p class="awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="container awesome__container">
+                <h2 class ="title awesome__title">Why this is awesome</h2>
+                <p class="text awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="awesome__block">
                 <div class="awesome__block-item">
                     <div class="awesome__block__image">
@@ -46,66 +45,108 @@
     </section>
 
     <section class="pricing">
-        <div class="pricing__container">
-            <h2 class="pricing__title">Pricing options</h2>
-            <hr>
-            <p class="pricing__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="container pricing__container">
+            <h2 class="title pricing__title">Pricing options</h2>
+            <p class="text pricing__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="pricing__block">
-                <div class="pricing__block-item">
-                    <h3 class="pricing__card__title">Basic</h3>
-                    <p class="pricing__card__price">$0</p>
-                    <p class="pricing__card__time">Free for Life</p>
-                    <p class="pricing__card__popularity"></p>
-                    <p class="pricing__card__descryption">1 gb of space</p>
-                    <p class="pricing__card__descryption">10 gb of bandwidth</p>
-                    <p class="pricing__card__descryption">3 websites</p>
-                    <p class="pricing__card__descryption">Basic customization</p>
-                    <p class="pricing__card__descryption">Wordpress integration</p>
-                    <p class="pricing__card__descryption">Email support</p>
-                </div>
-                <div class="pricing__block-item">
-                    <h3 class="pricing__card__title">Professional</h3>
-                    <p class="pricing__card__price">$19</p>
-                    <p class="pricing__card__time">Monthly Payment</p>
-                    <p class="most__popular">Our most popular</p>
-                    <p class="pricing__card__descryption">5 gb of space</p>
-                    <p class="pricing__card__descryption">50 gb of bandwidth</p>
-                    <p class="pricing__card__descryption">12 websites</p>
-                    <p class="pricing__card__descryption">Advanced customization</p>
-                    <p class="pricing__card__descryption">Wordpress integration</p>
-                    <p class="pricing__card__descryption">Email support</p>
-                </div>
-                <div class="pricing__block-item">
-                    <h3 class="pricing__card__title">Enterprice</h3>
-                    <p class="pricing__card__price">$70</p>
-                    <p class="pricing__card__time">Monthly Payment</p>
-                    <p class="pricing__card__popularity"></p>
-                    <p class="pricing__card__descryption">Unlimited space</p>
-                    <p class="pricing__card__descryption">Unlimited bandwidth</p>
-                    <p class="pricing__card__descryption">100 websites</p>
-                    <p class="pricing__card__descryption">Advanced customization</p>
-                    <p class="pricing__card__descryption">Wordpress integration</p>
-                    <p class="pricing__card__descryption">24/7 customer support</p>
-                </div>
+                <ul class="pricing__block-item">
+                    <li class="pricing__card__title">Basic</li>
+                    <li class="pricing__card__price"><span class="dollar">$</span>0</li>
+                    <li class="pricing__card__time">Free for Life</li>
+                    <li class="pricing__card__popularity"></li>
+                    <li class="pricing__card__descryption">1 gb of space</li>
+                    <li class="pricing__card__descryption">10 gb of bandwidth</li>
+                    <li class="pricing__card__descryption">3 websites</li>
+                    <li class="pricing__card__descryption">Basic customization</li>
+                    <li class="pricing__card__descryption">Wordpress integration</li>
+                    <li class="pricing__card__descryption">Email support</li>
+                    </ul>
+                <ul class="pricing__block-item">
+                    <li class="pricing__card__title">Professional</li>
+                    <li class="pricing__card__price"><span class="dollar">$</span>19</li>
+                    <li class="pricing__card__time">Monthly Payment</li>
+                    <li class="most__popular">Our most popular</li>
+                    <li class="pricing__card__descryption">5 gb of space</li>
+                    <li class="pricing__card__descryption">50 gb of bandwidth</li>
+                    <li class="pricing__card__descryption">12 websites</li>
+                    <li class="pricing__card__descryption">Advanced customization</li>
+                    <li class="pricing__card__descryption">Wordpress integration</li>
+                    <li class="pricing__card__descryption">Email support</li>
+                </ul>
+                <ul class="pricing__block-item">
+                    <li class="pricing__card__title">Enterprice</li>
+                    <li class="pricing__card__price"><span class="dollar">$</span></li>
+                    <li class="pricing__card__time">Monthly Payment</li>
+                    <li class="pricing__card__popularity"></li>
+                    <li class="pricing__card__descryption">Unlimited space</li>
+                    <li class="pricing__card__descryption">Unlimited bandwidth</li>
+                    <li class="pricing__card__descryption">100 websites</li>
+                    <li class="pricing__card__descryption">Advanced customization</li>
+                    <li class="pricing__card__descryption">Wordpress integration</li>
+                    <li class="pricing__card__descryption">24/7 customer support</li>
+                </ul>
             </div>
         </div>
     </section>
 
+    <section class="saying">
+        <div class="container saying__container">
+            <h2 class="title saying__title">What our customers are saying</h2>
+            <p class="text saying__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="saying__block">
+                <div class="saying__block-item">
+                    <div class="saying__block__item__text">Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Doloribus 
+                        accusamus expedita repellat similique 
+                        odio aspernatur ex, architecto eaque 
+                        quo suscipit.</div>
+                    <div class="saying__block__item__photo">
+                        <img src="/images/avatar.png" alt="Фото клиента">
+                    </div>
+                    <div class="saying__block__item__name">Jeremy H.</div>
+                    <div class="saying__block__item__profession">Manager</div>
+                </div>
+                <div class="saying__block-item">
+                    <div class="saying__block__item__text">Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Doloribus 
+                        accusamus expedita repellat similique 
+                        odio aspernatur ex, architecto eaque 
+                        quo suscipit.</div>
+                    <div class="saying__block__item__photo">
+                        <img src="/images/avatar.png" alt="Фото клиента">
+                    </div>
+                    <div class="saying__block__item__name">John S.</div>
+                    <div class="saying__block__item__profession">Freelancer</div>
+                </div>
+                <div class="saying__block-item">
+                    <div class="saying__block__item__text">Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Doloribus 
+                        accusamus expedita repellat similique 
+                        odio aspernatur ex, architecto eaque 
+                        quo suscipit.</div>
+                    <div class="saying__block__item__photo">
+                        <img src="/images/avatar.png" alt="Фото клиента">
+                    </div>
+                    <div class="saying__block__item__name">Jeremy H.</div>
+                    <div class="saying__block__item__profession">Manager</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="axure">
-        <div class="axure__container">
-            <h2 class="axure__title">Stylish axure design</h2>
-            <hr>
-            <p class="axure__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+        <div class="container axure__container">
+            <h2 class="title axure__title">Stylish axure design</h2>
+            <p class="text axure__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
             <button>Dowload</button>
         </div>
     </section>
 
     <footer>
-        <div class="footer__container">
+        <div class="container footer__container">
             <div class="social__icons">
                 <img src="/images/social_icons.png" alt="Иконки соц.сетей">
             </div>
-            <p class="footer__text">© 2015 Axure Themes</p>
+            <p class="text footer__text">© 2015 Axure Themes</p>
         </div>
     </footer>
 </body>

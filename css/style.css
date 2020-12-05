@@ -2,40 +2,56 @@
     box-sizing: border-box;
 }
 
-.awesome{
+section {
     width:100%;
 }
-.awesome__container {
+.container {
     width: 1400px;
-    background-color: #fff;
     margin: 0 auto;
 }
 
-.awesome__title{
-    color: #212121;
-    margin: 108px 0 30px;
+.title{
     font-family: Raleway;
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    line-height: 43px;
+    position: relative;
 }
 
-hr{
-    border: none;
-    height: 2px;
+.awesome__title::after, .pricing__title::after, .saying__title::after{
+    border-bottom: 2px solid  #ff8b38;
     width: 64px;
-    background-color: #ff8b38;
+    content: ''; 
+    position: absolute;
+    top: 55px;
+    left: 670px;
 }
 
-.awesome__text{
+.axure__title::after{
+    border-bottom: 2px solid  white;
+    width: 64px;
+    content: ''; 
+    position: absolute;
+    top: 130px;
+    left: 670px;
+}
+
+.text{
     color: #86878b;
     font-size: 14px;
     font-family: "Open Sans";
-    font-weight: 400;
     text-align: center;
     line-height: 43px;
+}
+
+.awesome{
+    background-color: #fff;
+}
+
+.awesome__title{
+    color: #212121;
+    margin: 108px 0 30px;
 }
 
 .awesome__block{
@@ -83,33 +99,19 @@ hr{
 
 
 .pricing{
-    width:100%;
+    background-color: #f5f5f5;
 }
 
 .pricing__container{
     padding-top: 108px;
-    width: 1400px;
-    background-color: #f5f5f5;
-    margin: 0 auto;
 }
 
 .pricing__title{
-color: #212121;
-font-family: Raleway;
-font-size: 36px;
-font-weight: 400;
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 30px;
+    color: #212121;
 }
 
 .pricing__text{
-    color: #86878b;
-    font-size: 14px;
-    font-family: "Open Sans";
-    font-weight: 400;
-    text-align: center;
-    line-height: 43px;
+    margin-top:30px;
     margin-bottom: 80px;
 }
 
@@ -145,6 +147,10 @@ margin-bottom: 30px;
     font-size: 94px;
     font-weight: 700;
     text-align:center;
+}
+.dollar{
+    font-size: 35px;
+    vertical-align: baseline;
 }
 
 .pricing__card__time{
@@ -186,38 +192,92 @@ margin-bottom: 30px;
 }
 
 
-.axure{
-    width: 100%;
+.saying{
+    background-color: #fff;
 }
 
-.axure__container{
+.saying__title{
+    color: #212121;
+    margin: 108px 0 30px;
+}
+
+.saying__block{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-bottom: 105px;
+    width: 1057px;
+}
+
+.saying__block-item{
+    width: 237px;
+    height: 225px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.saying__block__item__text{
+    background-color: #f5f5f5;
+    color: #86878b;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+    padding: 24px 13px;
+}
+
+.saying__block__item__text::after{
+    content: ''; 
+    position: absolute;
+    left: 25px; bottom: 89px;
+    border: 10px solid transparent;
+    border-top: 10px solid #f5f5f5;
+}
+
+.saying__block__item__photo{
+    margin-top: 20px;
+    width: 70px;
+}
+
+.saying__block__item__name{
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    top: 160px;
+    left: 87px;
+}
+
+.saying__block__item__profession{
+    color: #86878b;
+    font-family: "Open Sans";
+    font-size: 14px;
+    position: absolute;
+    top: 185px;
+    left:87px;
+}
+
+.axure{
     background-image: url("/images/back_image.png");
-    background-size: cover;
-    width: 1400px;
     background-color: black;
-    margin:0 auto;
+    background-size: cover;
 }
 
 .axure__title{
     color: white;
     padding-top: 74px;
     margin-bottom: 30px;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 400;
 }
 
 .axure__text{
     color: white;
     opacity:0.8;
-    font-size: 14px;
-    font-family: "Open Sans";
-    text-align: center;
-    line-height: 43px;
-    margin-bottom: 33px;
 }
+
 button{
     width: 135px;
     height: 42px;
@@ -233,13 +293,11 @@ button{
 
 footer{
     width:100%;
+    background-color: black;
 }
 
 .footer__container{
     padding-top:38px;
-    width: 1400px;
-    background-color: black;
-    margin: 0 auto;
 }
 
 .social__icons{
