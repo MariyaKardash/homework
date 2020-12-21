@@ -13,8 +13,10 @@ section {
 }
 
 header{
-    max-width:100%;
     background-color:black;
+    position:fixed;
+    width:100%;
+    z-index: 200;
 }
 
 .container {
@@ -130,11 +132,21 @@ a:hover{
     font-size: 16px;
     text-align: left;
     line-height:25px;
-    margin-bottom: 44px;
 }
 
 .fullscreen__button{
+    margin-top: 44px;
     margin-left: 70px;
+    transition: 0.3s all ease;
+}
+
+.fullscreen__button:hover{
+    width: 143px;
+    height: 49px;
+    background: rgba(255, 255, 255, 0.4);
+    border-color:white;
+    color:white;
+    transform: translate(-50%, 0);
 }
 
 .form__title{
@@ -146,6 +158,7 @@ a:hover{
     font-size: 20px;
     font-weight: 700;
     padding: 16px;
+    border-radius: 5px 5px 0 0;
 }
 
 .free{
@@ -184,6 +197,12 @@ a:hover{
     transform: none;
     color: #ffffff;
     font-size: 15px;
+    transition: 0.3s all ease;
+    border-radius: 0  0 5px 5px;
+}
+
+.form_button:hover{
+    font-size:19px;
 }
 
 .social_media{
@@ -233,6 +252,83 @@ a:hover{
     transition: 0.3s all ease;
     margin:0 15px;
 }
+
+.tabs{
+    background-color: #f5f5f5;
+}
+
+.tabs__container{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin: 150px auto;
+}
+
+.tabs__items{
+    padding-left: -15px;
+}
+
+.all_tabs{
+    height: 120px;
+    width: 120px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(29, 29, 29);
+    color:white;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    opacity: 1;
+    font-weight:800;
+    font-family: "Open Sans";
+    transition: 0.3s all ease;
+}
+
+.all_tabs:hover{
+    background-color: #ff8b38;
+}
+
+.tabs_block__title{
+    color: #333333;
+    max-width: 500px;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom:50px;
+}
+
+.tabs_block__text{
+    max-width: 500px;
+    color: #86878b;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    padding-bottom: 22px;
+}
+
+.tabs_block__button{
+    margin-top: 50px;
+    transform: none;
+    background-color: #ff8b38;
+    border-radius: 5px;
+    transition: 0.3s all ease;
+}
+
+.tabs_block__button:hover{
+    transform: scale(1.2);
+}
+
+.block__image{
+    padding-right: -15px;
+}
+
+.all_tabs:checked{
+    background-color: #ff8b38;
+}
+
 .awesome{
     background-color: #fff;
 }
@@ -484,6 +580,16 @@ button{
     position: relative;
     left: 50%;
     margin-bottom:63px;
+    transition: 0.3s all ease;
+}
+
+.axure__button:hover{
+    width: 143px;
+    height: 49px;
+    background: rgba(255, 255, 255, 0.4);
+    border-color:white;
+    color:white;
+    transform: translate(-50%, 0);
 }
 
 .contact{
@@ -517,8 +623,11 @@ button{
     width: 100%;
 }
 
+.menu{
+    display:none;
+}
 .contact__input{
-    width: 527px;
+    width: 100%;
     height:31px;
     border:none;
     border-bottom: 1px solid rgba(0, 0, 1, 0.16);
@@ -570,6 +679,11 @@ button{
     font-weight: 600;
     outline: none;
     border-bottom: 1px solid rgba(0, 0, 1, 0.16);
+    transition: 0.3s all ease;
+}
+
+.contact__button:hover{
+    transform: scale(1.2);
 }
 
 footer{
@@ -582,7 +696,7 @@ footer{
 }
 
 .footer_icons__item{
-    width: 317px;
+    max-width: 317px;
     margin: 0 auto;
     font-size: 23px;
     color: white;
@@ -604,3 +718,155 @@ footer{
     opacity: 0.5;
     padding-bottom: 15px;
 }
+
+@media screen and (max-width:1000px)
+{
+    .tabs__container{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .tabs__menu{
+        display:flex;
+        flex-direction: column;
+        margin-bottom:15px;
+        margin-right: 30px;
+    }
+
+    .block__text, .tabs_block__title, .tabs_block__text{
+        text-align: center;
+    }
+
+    .block__image{
+        display:none;
+    }
+    
+    .saying__block-item{
+        margin-bottom:50px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    html {
+      font-size: 13px;
+    }
+  
+    .fullscreen__container{
+        margin-top:80px;
+        display:flex;
+        justify-content: center;
+    }
+
+    .fullscreen__content{
+        text-align:center;
+        display:flex;
+        justify-content:center;
+    }
+    
+    .fullscreen__form__block{
+        padding-top: 50px;
+    }
+
+    .fullsreen__content{
+        text-align:center;
+    }
+
+    .fullscreen__button{
+        transform: translate(-30%, 0);
+    }
+
+    .fullscreen__button:hover{
+        transform: translate(-30%, 0);
+    }
+
+    .fullscreen_title::after{
+        margin:30px auto 15px;
+    }
+
+    .fullscreen_title, .fullscreen_text{
+        text-align: center;
+    }
+
+    .media_text{
+        display:none;
+    }
+
+    .media_icons{
+        margin:0 auto;
+        justify-content:center;
+    }
+
+    .fab1{
+        margin: 0 30px;
+    }
+  }
+  
+  @media (max-width: 680px) {  
+      .tabs__menu{
+          display: flex;
+          flex-direction: row;
+          margin-left:30px;
+      }
+
+      .all_tabs{
+        border-right: 1px solid white;
+      }
+
+      .menu{
+          display:block;
+          font-size: 23px;
+          color: white;
+          opacity: 0.5;
+      }
+
+      .navigation{
+          display:none;
+      }
+  }
+  
+  @media screen and (max-width: 500px) {
+
+    .footer_icons__item{
+        max-width: 500px;
+    }
+  
+    .header-logo__img img {
+      max-width: 50px;
+    }
+  
+    .fullscreen__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .fullscreen-head {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .fullscreen-head__img {
+      max-width: 100px;
+    }
+    .fullscreen-head__title {
+      padding-top: 15px;
+      text-align: center;
+    }
+  
+    .fullscreen-head__title:after {
+      display: none;
+    }
+    .fullscreen-head__text {
+      display: none;
+    }
+  
+    .fullscreen__btn {
+      margin: auto;
+      margin-top: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+     
+    .fullscreen__form__block{
+      display: none;
+    }
+  }
