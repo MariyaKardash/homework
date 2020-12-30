@@ -10,6 +10,7 @@
 
 section {
     width:100%;
+    overflow-x: hidden;
 }
 
 header{
@@ -45,6 +46,7 @@ a{
     color: #ffffff;
     font-family: Raleway;
     font-size: 14px;
+    transition: 0.3s all ease;
 }
 
 a:hover{
@@ -93,7 +95,7 @@ a:hover{
 .fullscreen{
     background:url(/images/full_screen.png);
     background-color: black;
-    min-height: calc(100vh - 73px);
+    min-height: 100vh;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -635,6 +637,10 @@ button{
     margin-top: 30px;
 }
 
+.message__input{
+    display:none;
+}
+
 .contact__textarea {
     width: 100%;
     height: 135px;
@@ -798,6 +804,31 @@ footer{
 
     .fab1{
         margin: 0 30px;
+    }
+
+    .form__block{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .message__input{
+        display: block;
+    }
+
+    .message{
+        display: none;
+    }
+
+    .contact__list_item{
+        max-width: 100%;
+    }
+
+    .saying__block-item{
+        width: 300px;
+    }
+
+    .saying__block__item__text::after {
+        top: 115px;
     }
   }
   
